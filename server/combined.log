@@ -1,0 +1,23 @@
+{"level":"info","message":"GET /balance/0x7725dd861ff569c79184 304 - - 6.855 ms"}
+{"level":"info","message":"GET /balance/0x7725dd861ff569c79184 304 - - 0.628 ms"}
+{"level":"info","message":"GET /balance/0x7725dd861ff569c79184 304 - - 0.239 ms"}
+{"level":"info","message":"GET /balance/0x7725dd861ff569c79184 304 - - 0.368 ms"}
+{"level":"info","message":"OPTIONS /send 204 0 - 0.882 ms"}
+{"level":"info","message":"secp256k1.recoverPublicKey is not a function"}
+{"level":"info","message":"secp256k1.recoverPublicKey is not a function"}
+{"level":"info","message":"OPTIONS /send 204 0 - 0.335 ms"}
+{"level":"info","message":"secp256k1.recoverPublicKey is not a function"}
+{"level":"info","message":"secp256k1.recoverPublicKey is not a function"}
+{"level":"info","message":"secp256k1.recoverPublicKey is not a function"}
+{"level":"info","message":"secp256k1.recoverPublicKey is not a function"}
+{"level":"info","message":"signature.recoverPublicKey is not a function"}
+{"level":"info","message":"signature.recoverPublicKey is not a function"}
+{"level":"info","message":"POST /send - - - - ms"}
+{"level":"info","message":"POST /send - - - - ms"}
+{"level":"info","message":"GET /balance/0x7725dd861ff569c79184 304 - - 4.141 ms"}
+{"level":"info","message":"OPTIONS /send 204 0 - 0.897 ms"}
+{"level":"info","message":"signature.recoverPublicKey is not a function"}
+{"level":"info","message":"secp256k1.Signature.fromString is not a function"}
+{"level":"info","message":"GET /balance/0x7725dd861ff569c79184 304 - - 3.561 ms"}
+{"level":"info","message":"OPTIONS /send 204 0 - 1.139 ms"}
+{"level":"info","message":"secp256k1.Signature.fromHex is not a function"}
