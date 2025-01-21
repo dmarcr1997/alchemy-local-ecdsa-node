@@ -4,6 +4,34 @@ This project is an example of using a client and server to facilitate transfers 
 
 However, something that we would like to incoporate is Public Key Cryptography. By using Elliptic Curve Digital Signatures we can make it so the server only allows transfers that have been signed for by the person who owns the associated address.
 
+## My Changes
+
+**Server**
+I created the `/sever/crypto.js` file that holds functions to:
+* Convert a signature into a public key
+* Convert a public key to an Address
+* Hash a message using keccak256
+On top of that I modified `/server/index.js` by:
+* Adding logging to the server to track errors and conditions of ecsda node better
+* Changing balance to be retrieved through use of signature instead of directly sending over public key
+
+**Client**
+As for the front end I:
+* set up signature creation through the creation of this function:
+```
+ async function signMessage(msg) {
+    const message = hashMessage(msg);
+    return await secp256k1.sign(message, privateKey, {
+      recovered: true,
+    });
+  }
+```
+* Tracking and use of private key to retrieve public key
+* retrieval of balance based on server conditions instead of directly changing it on every transfer
+
+
+## Instructions
+
 ### Video instructions
 For an overview of this project as well as getting started instructions, check out the following video:
 
@@ -29,3 +57,6 @@ The server folder contains a node.js server using [express](https://expressjs.co
 The application should connect to the default server port (3042) automatically! 
 
 _Hint_ - Use [nodemon](https://www.npmjs.com/package/nodemon) instead of `node` to automatically restart the server on any changes.
+
+
+
